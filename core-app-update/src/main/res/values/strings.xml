@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_app_update_title">New version available</string>
+    <string name="dialog_app_update_message">The Current Version Of Application Is No Longer Supported. Please Update The App</string>
+    <string name="dialog_app_update_btn_update">Update</string>
+    <string name="dialog_app_update_btn_no_thanks">No, Thanks</string>
+</resources>

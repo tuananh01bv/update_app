@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#262626"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="28dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="24dp">
+
+            <!-- Rocket Illustration Icon -->
+            <ImageView
+                android:id="@+id/imgHeader"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_update_rocket" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/dialog_app_update_title"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/outfit_medium"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Description Message -->
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:fontFamily="@font/outfit_regular"
+                android:text="@string/dialog_app_update_message"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <!-- Update Button (Primary) -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_btn_update_primary"
+                android:text="@string/dialog_app_update_btn_update"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:fontFamily="@font/outfit_medium"
+                android:textColor="#171717"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- No, Thanks Button (Secondary / Text Button) -->
+            <TextView
+                android:id="@+id/btnNoThanks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:text="@string/dialog_app_update_btn_no_thanks"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/outfit_medium"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
